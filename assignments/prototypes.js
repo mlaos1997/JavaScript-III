@@ -15,6 +15,16 @@
   * destroy() // prototype method -> returns the string: 'Object was removed from the game.'
 */
 
+class GameObject {
+  constructor(gameProperties) {
+    this.creatdAt = gameProperties.createdAt;
+    this.dimensions = gameProperties.dimensions;
+  }
+  destroy() {
+    return `Object was removed from the game`;
+  }
+}
+
 /*
   === CharacterStats ===
   * healthPoints
